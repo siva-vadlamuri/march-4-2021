@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conditions - JS</title>
+</head>
+<body>
+
+<script>
+	/*
+		Conditions - To take decessions
+
+		Types - 
+
+			1) 	if(cond){
+					statement(s);
+				}
+
+			2) 	if(cond){
+					statement(s);
+				}else{
+					statement(s);
+				}
+			3) if(cond){
+					statement(s);
+				}elseif(cond){
+					statement(s);
+				}elseif(cond){
+					statement(s);
+				}else{
+					statement(s);
+				}
+			4) switch(option){
+				case 1: statement(s);
+						break;
+				case 2: statement(s);
+						break;
+				case 3: statement(s);
+						break;
+				case 4: statement(s);
+						break;
+				case 5: statement(s);
+						break;
+				case 6: statement(s);
+						break;
+				default: statement(s);
+						break;
+			}
+	*/
+
+	let isClassThere = 'yes';
+	if(isClassThere==='yes')
+		alert('Hi Guys , we have a class today, Please join!');
+
+	let today  = new Date();
+
+	let day_number = today.getDay();
+	
+	switch(day_number){
+		case 0: alert('Today is Sunday, It\'s Biriyani Day');
+				break;
+		case 1: alert('Today is Monday, It\'s Boring Day');
+				break;
+		case 2: alert('Today is Tuesday, It\'s Also Boring Day');
+				break;
+		case 3: alert('Today is Wednesday, It\'s eagerly waiting for weekend');
+				break;
+		case 4: alert('Today is Thursday, It\'s planning  Day for weekend');
+				break;
+		case 5: alert('Today is Friday, It\'s Happy Day');
+				break;
+		case 6: alert('Today is Saturday, It\'s Enjoying Day');
+				break;
+		default: alert('Today is Sunday, It\'s Worrying Day');
+				break;
+	}
+</script>
+</body>
+</html>

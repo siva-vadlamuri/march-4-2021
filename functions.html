@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions - JS</title>
+</head>
+<body>
+<button id="btn">Welcome, Click Me</button>
+<script>
+	/*
+		Functions - A function is a sub-routine contains set of statements that can executed to perform a specific task.
+
+		using function key  word we can create a function.
+
+		Syntax - 
+
+			function <function-name>(){
+				//body of a function
+			}
+
+			// calling / triggering / invoking
+
+			function-name();
+	*/
+	debugger;
+	let amount = prompt('Please enter Amount');
+	let gstpercent = prompt('Please enter GST percentage');
+	/* Example */
+	function gstCalculation(amount,gstpercent){
+		let total;//Defination
+
+		// amount = 5000;
+		// gstpercent = 25;// Assignment
+
+		// logic
+		total = parseInt(amount) + (parseInt(amount) * gstpercent/100);
+
+		return total;
+	}
+
+	/*
+		scope - Accessibility of a identifiers
+
+			- global - A identifier that can be accessible with in function or with in a page
+			- local - A indentifier that can be accessible only with-in function 
+			- block level - A identifiers that can be accessible with-in the block 
+			- super Global  - Information that can be accessible through-out our application is called as super global scope
+				Example  - COOKIES
+
+	*/
+	if(20%10==0){
+		let result = 'Even';
+	}
+	//alert(result); Result variable can't be accessible out-side because it was declared as block level
+	//alert(total)// yoiu can't access 'total' because it was declared as local scope
+
+	// function invokation
+	console.log(gstCalculation(amount,gstpercent));//
+	console.log(gstCalculation());
+	console.log(gstCalculation());
+	console.log(gstCalculation());
+
+	/* Different type of creating function 
+		- Function without parameters
+		- Function with parameters
+		- Function with default parameters
+		- Funtion with return statment
+		- Named function
+		- Variable function
+		- Anonymous function
+		- Callback function
+		- Selfinvoking function
+		- Nested functions
+		- Recursive function
+
+	*/
+
+	/*Example for function with Default parameters */
+
+	function defaultDiscount(amount,discountPercent=20){
+		let totalAmount = amount - (amount*discountPercent/100);
+		return totalAmount;
+	}
+ 
+	alert(defaultDiscount(500,50));//250
+	alert(defaultDiscount(500));//400
+
+	/* Example for anonymous function */
+
+	document.getElementById('btn').addEventListener('click',function(){
+		window.location.href = 'https://www.achieversit.com/';
+	});
+
+	var redirectToAIT = function (){
+		window.location.href = 'https://www.achieversit.com/';
+	}
+
+	//redirectToAIT();
+
+
+/* Example for self invoking function */
+
+	(function(){
+		document.write('<h1>Welcome to AchieversIT</h1>');
+	})();
+
+</script>
+</body>
+</html>

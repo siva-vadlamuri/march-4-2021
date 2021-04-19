@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datatypes,Variables and Constants</title>
+</head>
+<body>
+
+
+<script>
+	/*
+		Datatypes - Which determines the nature of the data to store into indetifiers.
+
+		Rules of Identifier Name - 
+
+			- Identifier name should not be a reserve name
+			- Identifier name should not start with numbers but it can contain numbers
+			- Identifier name should not contain any special characters other than 'underscore ' or dollar symbol
+
+		Types - 
+			- Number(int,float,double)
+			- String - Group of characters
+			- Boolean - Either True or False
+			- undefined - An identifiers with out assignment
+			- null - Not empty 
+			- Object - key value pair
+
+	*/
+	/* Example for Number */
+	var aadhar_number = new Number(3232323232);
+	const fees = 25000;
+	//alert(aadhar_number);
+	//alert(typeof aadhar_number);//object
+	//alert(typeof fees);//number
+
+	fees = 30000;
+
+	alert(fees);
+
+	/* Example for String */
+
+	var course_name = 'ReactJS Developoment';
+
+	var course_duration = new String('3 Months');
+
+	/* Example for boolean */
+
+	var age = 80;
+
+	var isEligible = null;
+
+	//alert(typeof isEligible);//
+
+	(age>17)?isEligible = new Boolean(true):isEligible = new Boolean(false);
+
+	alert(typeof isEligible);
+	if(isEligible){
+		alert('He is eligible to cast vote')
+	}else {
+		alert('He is not eligible to cast a vote');
+	}
+
+
+	/* Example for Object */
+
+	var student_information = {
+		name:'Sachin',
+		email:'sachin@gmail.com',
+		phone:2121212121,
+		aadhar:35546465656
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays - JS</title>
+</head>
+<body>
+
+<script>
+	/* Example for Array  - Literal way*/
+
+	let courses = ['UI','ReactJS','Angular','MEAN','MERN'];
+
+	/* Example for Array - Constructor way */
+	let mode_of_training = new Array('Online','Offline','Both');
+
+	//Retriving a data from array
+
+	console.log(typeof mode_of_training);
+	console.log(typeof courses);
+
+	/* Array Operation */
+
+	/* How to find the no of values from an array */
+	console.log('Length of array ');
+	console.log(courses.length);
+
+	/* Array Manupulation 
+
+		- push() - inserting one or more values into an array at last position
+		- pop()
+		- shift()
+		- unshift()
+		- slice()
+		- splice()
+		- sort()
+		- join()
+	*/
+
+	courses.push('C','C++');
+	console.log(courses);
+	console.log(courses.pop());
+	console.log(courses);
+
+	var portion_of_array = courses.slice();
+	console.log(portion_of_array);
+
+
+	courses.splice(6,2,'DevOPS','Datascience','AI');
+
+	console.log(courses);
+
+	console.log(courses.sort());
+
+
+
+
+</script>
+</body>
+</html>

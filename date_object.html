@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date Object - JS</title>
+</head>
+<body>
+
+<script>
+	var today = new Date();
+	alert(today);
+
+	// getter methods
+	console.log(today.getDay());
+	console.log(today.getMonth());
+	console.log(today.getFullYear());
+	console.log(today.getHours());
+	console.log(today.getMinutes());
+	console.log(today.getSeconds());
+	console.log(today.getMilliseconds());
+
+	function dateformat(){
+		return (today.getDate())+"-0"+(today.getMonth()+1)+"-"+today.getFullYear();
+		//return "0"+(today.getMonth()+1)+"-"+today.getDate()+"-"+today.getFullYear();
+	}
+
+	console.log(dateformat());
+
+
+	//setter methods
+
+	console.log(today.setDate(21));
+	console.log(today.getDate());
+</script>
+</body>
+</html>
