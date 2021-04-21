@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom / User Defined Objects - JS</title>
+</head>
+<body>
+
+<script>
+	/*
+		There are 3 ways that we can create a custom object
+
+			- Object literal
+			- Object Constructor
+			- using predefined Object
+	*/
+
+	/* Object literal - Example */
+
+	var institute = {
+		firstname:'AchieversIT',
+		lastname:'training institute',
+		place:' located at BTM, Bangalore',
+		details: function(){
+			return this.firstname+' '+this.lastname+' '+this.place;
+		},
+		courses: function(){
+			return "AchieversIT provides trainings on Fullstack, Ui, MERN,MEAN,DM,AWS,DevOps etc..."
+		}
+	}
+
+	// retriving props and methods
+
+	console.log(institute.firstname);//AchieversIT
+	console.log(institute.courses());//AchieversIT provides trainings on Fullstack, Ui, MERN,MEAN,DM,AWS,DevOps etc...
+</script>
+</body>
+</html>
